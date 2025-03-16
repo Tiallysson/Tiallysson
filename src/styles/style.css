@@ -142,4 +142,55 @@ body {
     height: auto;
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Sombra para melhor visibilidade */
 }
-  
+
+.card-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.card {
+    color: white;
+    background-color: #172f52;
+    border-radius: 18px;
+    border-color: rgb(73, 73, 73);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card img {
+    position: absolute;
+    width: 240px; /* Largura fixa */
+    height: 150px; /* Altura fixa */
+    width: 15rem;
+    border-radius: 18px;
+    margin-top: 1.5rem;
+    margin-left: -2rem;
+    object-fit: cover;
+}
+
+.card-body {
+    margin-left: 15rem;
+}
+
+.custom-card {
+    width: 80rem !important;
+    height: 200px;
+}
+
+.card-text-sub {
+    font-size: 11px;
+    margin-bottom: 0 !important;
+}
+
+.badge {
+    margin-left: 5px;
+    font-size: 10px;
+    position: absolute;
+}
+
+.card-text-date {
+    display: flex;
+    font-size: 10px;
+    color: gray;
+}
