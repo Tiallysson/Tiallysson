@@ -1,9 +1,27 @@
-body {
-    background-color: #1a355b;
+html, body {
+    overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
+    margin: 0; /* Remove margens extras */
+    padding: 0;
+    width: 100vw; /* Garante que o tamanho máximo seja a largura da tela */
+    background-color: #373940;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+}
+
+.noise {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.15;
+    background-image: url(../images/ruido-animado.gif);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .container-fluid {
@@ -11,10 +29,10 @@ body {
 }
 
 .navbar {
-    background-color: #1a355b !important;
+    background-color: #373940 !important;
     padding: 40px 40px;
-    margin-left: 13vh !important;
-    margin-right: 13vh !important;
+    margin-left: 13% !important;
+    margin-right: 13% !important;
 }
 
 .navbar .navbar-brand {
@@ -30,12 +48,12 @@ body {
 }
 
 .nav-link {
-    color: white;
+    color: #DBE4FF;
     transition: color 0.6s ease;
 }
 
 .nav-link:hover {
-    color: rgb(170, 170, 170);
+    color: #6D727F;
     cursor: pointer;
 }
 
@@ -43,17 +61,22 @@ body {
     margin-right: 20px;
   }
 
-.code-img {
+.home-photo {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-right: 40vh;
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 }
 
-.code-img img {
-    width: 850px;
+.home-photo img {
+    width: 300px;
     justify-content: flex-start;
-    margin-left: 17vh;
+    margin-left: 40vh;
     margin-right: 20px;
+    border-radius: 1000px;
 }
 
 .text-about {
@@ -105,42 +128,22 @@ body {
     rgba(0, 0, 0, 0) 100%);
 }
 
-.skills {
-    position: relative;
-    text-align: center;
-}
-  
-.background-section {
-    position: relative;
-    width: 100%; /* Ajusta conforme necessário */
-    height: 1000px; /* Defina um tamanho adequado */
-    background: url('images/background.png') center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-  
-.title {
-    position: absolute;
-    top: 45vh;
-    font-size: 40px;
-    color: white; /* Ajuste conforme necessário */
-    font-weight: bold;
-}
-  
 .icons {
-    position: absolute;
-    height: 70px;
-    bottom: 45vh;
     display: flex;
-    gap: 30px; /* Espaçamento entre os ícones */
+    height: 70px;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
 }
-  
-.icon {
-    width: 80px;
-    height: auto;
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Sombra para melhor visibilidade */
+
+.titles {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    bottom: 40vh;
+    margin-top: 1.5rem;
 }
 
 .card-container {
@@ -151,7 +154,7 @@ body {
 
 .card {
     color: white;
-    background-color: #172f52;
+    background-color: #4F525C;
     border-radius: 18px;
     border-color: rgb(73, 73, 73);
     margin-top: 1.5rem;
@@ -193,4 +196,54 @@ body {
     display: flex;
     font-size: 10px;
     color: gray;
+}
+
+#back-to-top {
+    position: fixed;
+    border-radius: 20px;
+    border: none;
+    margin-top: 91vh;
+    margin-left: 195vh;
+    background-color: #C5CDE5;
+    z-index: 9998;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+}
+
+#back-to-top:hover {
+    background-color: #DBE4FF;
+    transition: 0.5s ease;
+}
+
+.light {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease;
+    z-index: 9999;
+    filter: blur(18px);
+}
+
+@media(max-width: 1280px){
+    .code-img img {
+        width: 620px;
+    }
+
+    .title {
+        top: 55vh;
+    }
+
+    .icons {
+        bottom: 58vh;
+    }
+
+    .card {
+        margin-left: 10vh;
+        margin-right: 10vh;
+    }
 }
