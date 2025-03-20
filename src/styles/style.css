@@ -203,7 +203,7 @@ html, body {
     border-radius: 20px;
     border: none;
     margin-top: 91vh;
-    margin-left: 195vh;
+    margin-left: 95vw;
     background-color: #C5CDE5;
     z-index: 9998;
     height: 40px;
@@ -254,14 +254,14 @@ html, body {
         margin-left: 10vh;
         margin-right: 10vh;
     }
-    .home-photo {
-        margin-right: 5rem;
-        margin-left: 1.8rem;
+    .presentation {
+        margin-right: 5vw;
+        margin-left: 5vw;
     }
 
-    .home-photo img {
+    .presentation img {
         width: 200px;
-        margin-left: 30vh;
+        margin-left: 10vh;
         margin-right: 20px;
         border-radius: 1000px;
     }
