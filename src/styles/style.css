@@ -31,8 +31,8 @@ html, body {
 .navbar {
     background-color: #373940 !important;
     padding: 40px 40px;
-    margin-left: 13% !important;
-    margin-right: 13% !important;
+    margin-left: 13%;
+    margin-right: 13%;
 }
 
 .navbar .navbar-brand {
@@ -61,7 +61,7 @@ html, body {
     margin-right: 20px;
   }
 
-.home-photo {
+.presentation {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -71,9 +71,9 @@ html, body {
     margin-bottom: 15vh;
 }
 
-.home-photo img {
+.presentation img {
+    display: flex;
     width: 300px;
-    justify-content: flex-start;
     margin-left: 40vh;
     margin-right: 20px;
     border-radius: 1000px;
@@ -221,15 +221,23 @@ html, body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(122, 120, 120, 0.7);
     pointer-events: none;
     transform: translate(-50%, -50%);
     transition: all 0.1s ease;
     z-index: 9999;
-    filter: blur(18px);
+    filter: blur(30px);
 }
 
 @media(max-width: 1280px){
+    .noise {
+        width: 100%;
+        height: 100%;
+    }
+    .navbar {
+        margin-left: 8vh;
+        margin-right: 8vh;
+    }
     .code-img img {
         width: 620px;
     }
@@ -246,4 +254,23 @@ html, body {
         margin-left: 10vh;
         margin-right: 10vh;
     }
+    .home-photo {
+        margin-right: 5rem;
+        margin-left: 1.8rem;
+    }
+
+    .home-photo img {
+        width: 200px;
+        margin-left: 30vh;
+        margin-right: 20px;
+        border-radius: 1000px;
+    }
+}
+
+#btn-social {
+    padding: 10px 16px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
 }

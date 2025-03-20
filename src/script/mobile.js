@@ -43,8 +43,9 @@ document.addEventListener('mousemove', (e) => {
 });
 
 function carregarVersao() {
-    if (window.innerWidth <= 768) {
-        window.location.href = "mobile.html"; // Redireciona para a versão mobile
+    if (window.innerWidth >= 768) {
+        window.location.href = "index.html"; // Redireciona para a versão mobile
     }
 }
 window.onload = carregarVersao;
+
