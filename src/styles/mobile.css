@@ -88,6 +88,7 @@ html, body {
     align-items: center;
     border-radius: 100px;
     margin-bottom: 3.5vh;
+    text-align: justify;
 }
 
 .titles {

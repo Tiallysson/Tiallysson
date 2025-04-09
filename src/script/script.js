@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
 const light = document.querySelector('.light');
 
 document.addEventListener('mousemove', (e) => {
-  light.style.left = `${e.pageX}px`;
-  light.style.top = `${e.pageY}px`;
+    light.style.left = `${e.pageX}px`;
+    light.style.top = `${e.pageY}px`;
 });
 
 function carregarVersao() {
@@ -48,3 +48,26 @@ function carregarVersao() {
     }
 }
 window.onload = carregarVersao;
+
+// Configuração da data de início do contrato (ano, mês-1, dia)
+const startDate = new Date(2024, 10, 6);
+
+// Atualiza o contador
+function updateCounter() {
+    const now = new Date();
+
+    let months;
+    months = (now.getFullYear() - startDate.getFullYear()) * 12;
+    months += now.getMonth() - startDate.getMonth();
+
+    if (now.getDate() < startDate.getDate()) {
+        months--;
+    }
+
+    document.getElementById('months').textContent = months + (months === 1 ? " mês" : " meses");
+}
+
+updateCounter();
+setInterval(updateCounter, 86400000);
+
+
