@@ -6,11 +6,25 @@ html, body {
     font-style: normal;
 }
 
+.value {
+    font-size: 14px;
+    color: white;
+    padding: 2px;
+    background-color: #0D6EFD;
+    width: 75px;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 3px;
+    border: solid 1px rgb(116, 115, 115);
+}
+
+
 .noise {
     display: block;
     width: 100vw;
     height: 100vh;
-    opacity: 0.15;
+    opacity: 0.05;
     background-image: url(../images/ruido-animado.gif);
     overflow: hidden;
     position: fixed;
@@ -120,6 +134,8 @@ html, body {
 }
 
 .card img {
+    align-items: center;
+    align-self: center;
     border-radius: 18px;
 }
 

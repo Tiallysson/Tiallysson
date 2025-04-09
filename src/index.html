@@ -15,6 +15,45 @@
   <title>Tiallysson</title>
 
 <body>
+  <div class="modal bg-body-primary p-4 py-md-5" tabindex="-1" role="dialog" id="modalTour">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 shadow bg-dark text-white">
+        <div class="modal-body p-5">
+          <h2 class="fw-bold mb-0">Novo!</h2>
+
+          <ul class="d-grid gap-4 my-5 list-unstyled small">
+            <li class="d-flex gap-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check-square-fill text-success" viewBox="0 0 16 16">
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+              </svg>
+              <div>
+                <h5 class="mb-0">Icone</h5>
+                Novo icone
+              </div>
+            </li>
+            <li class="d-flex gap-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-info-square-fill text-warning" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+              </svg>
+              <div>
+                <h5 class="mb-0">Correções</h5>
+                Correções visuais importantes
+              </div>
+            </li>
+            <!-- <li class="d-flex gap-4">
+              <svg class="bi text-primary flex-shrink-0" width="48" height="48" aria-hidden="true"><use xlink:href="#film"></use></svg>
+              <div>
+                <h5 class="mb-0">Video embeds</h5>
+                Share videos wherever you go.
+              </div>
+            </li> -->
+          </ul>
+          <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">Ver mais</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="noise"></div>
 
   <div class="light"></div>
@@ -27,8 +66,7 @@
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="images/logo.png" alt="Logo" width="30" height="32" class="d-inline-block align-text-top">
-          Tiallysson Costa
+          <img src="images/logo.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
         </a>
 
         <div class="nav-link">
@@ -186,10 +224,10 @@
         id="btn-social" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
           <i class="bi bi-linkedin"></i>
         </a>
-      </div>
-      <div class="footer-section">
-        <h3>Contato</h3>
-        <p>Email: tiallysson@proton.me</p>
+        <a href="mailto:tiallysson@proton.me" target="_blank" class="btn btn-primary"
+        id="btn-social" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+          <i class="bi bi-envelope"></i>
+        </a>
       </div>
     </div>
     <div class="footer-bottom">

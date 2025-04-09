@@ -71,3 +71,14 @@ updateCounter();
 setInterval(updateCounter, 86400000);
 
 
+// Quando o documento estiver totalmente carregado
+document.addEventListener('DOMContentLoaded', function () {
+    // Cria uma instância do modal
+    var myModal = new bootstrap.Modal(document.getElementById('modalTour'), {
+        backdrop: 'static', // Impede que o modal feche ao clicar fora dele
+        keyboard: false     // Impede que o modal feche ao pressionar ESC
+    });
+
+    // Mostra o modal
+    myModal.show();
+});
