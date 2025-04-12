@@ -1,7 +1,7 @@
 # Nice to meet you, Tiallysson here!
 
 ## Portfólio:
-[![Clique aqui](https://tiallysson.github.io/Tiallysson/src/images/logo.png)](https://tiallysson.github.io/Tiallysson/src/index.html)
+[![Clique aqui](https://tiallysson.github.io/Tiallysson/src/images/logo.png)]
 
 
 ## 🌐 Socials:
