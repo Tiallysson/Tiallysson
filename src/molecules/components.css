@@ -1,0 +1,51 @@
+.btn {
+    border-radius: 15px;
+    background-color: transparent;
+    border: solid 1px rgb(116, 115, 115);
+    transition: background-color 2s ease-in-out;
+}
+
+.btn:hover {
+    border: solid 1px rgb(116, 115, 115);
+    background-color: var(--color-background);
+    transition: background-color 2s ease-in-out;
+}
+
+.value {
+    font-size: 14px;
+    color: white;
+    padding: 2px;
+    background-color: transparent;
+    width: 75px;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 3px;
+    border: solid 1px rgb(116, 115, 115);
+    transition: background-color 2s ease-in-out;
+}
+
+.value:hover {
+    background-color: var(--color-background);
+    transition: background-color 2s ease-in-out;
+}
+
+.icons {
+    display: flex;
+    height: 70px;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+#btn-social {
+    background-color: transparent !important;
+    padding: 10px 16px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    border: 1px groove var(--secondary-color-background);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+

@@ -1,177 +1,147 @@
-html, body {
-    background-color: #373940;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem; /* Reduzir o tamanho da fonte base se necessário */
+    }
 
-.value {
-    font-size: 14px;
-    color: white;
-    padding: 2px;
-    background-color: #0D6EFD;
-    width: 75px;
-    align-items: center;
-    text-align: center;
-    border-radius: 15px;
-    margin-top: 3px;
-    border: solid 1px rgb(116, 115, 115);
-}
+    .skills {
+        padding: 0 20px; /* Adiciona um pouco de padding lateral na seção de skills */
+        text-align: center; /* Centraliza o título "Skills" */
+    }
 
+    .titles {
+        font-size: 24px; /* Reduz o tamanho do título em mobile */
+    }
 
-.noise {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0.05;
-    background-image: url(../images/ruido-animado.gif);
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 1;
-}
+    .icons {
+        width: 100%; /* Ocupa toda a largura disponível */
+        justify-content: space-around; /* Distribui os ícones igualmente */
+        gap: 10px; /* Reduz o espaçamento entre os ícones */
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 
-.navbar {
-    display: flex;
-    flex-direction: column; /* Organiza os itens em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    text-align: center; /* Garante que os textos fiquem centralizados */
-    padding: 10px 0; /* Espaçamento superior e inferior */
-    background-color: #373940 !important;
-}
+    .icons img,
+    .icons svg {
+        width: 40px; /* Reduz o tamanho dos ícones */
+        height: 40px;
+    }
 
-.container-fluid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
+    .navbar {
+        display: flex;
+        padding: 20px 20px; /* Reduzir o padding da navbar */
+        margin-left: auto; /* Reduzir as margens laterais */
+        margin-right: auto;
+        width: 90%;
+        max-width: 768px;
+    }
 
-.navbar-brand {
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espaço entre logo e texto */
-    margin-top: 2vh;
-    margin-bottom: 3vh;
-}
+    .navbar-brand {
+        margin-bottom: 10px; /* Adicionar espaço abaixo da logo */
+        font-size: 1.1rem !important; /* Reduzir um pouco o tamanho da fonte da logo */
+    }
 
-.nav-link .d-flex {
-    color: white;
-    display: flex;
-    flex-direction: column; /* Itens empilhados */
-    align-items: center;
-}
+    .navbar-brand img {
+        margin-right: 10px; /* Reduzir a margem da imagem da logo */
+        max-width: 80px; /* Limitar a largura da imagem da logo */
+        height: auto; /* Manter a proporção da imagem */
+    }
 
-#back-to-top {
-    position: fixed;
-    border-radius: 20px;
-    border: none;
-    margin-top: 200%;
-    margin-left: 85%;
-    background-color: #C5CDE5;
-    z-index: 9998;
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
-}
+    .navbar-nav {
+        width: 100%;
+    }
 
-#back-to-top:hover {
-    background-color: #DBE4FF;
-    transition: 0.5s ease;
-}
+    .nav-link {
+        padding: 10px 0; /* Adicionar padding vertical aos links */
+    }
 
-.presentation {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    color: white;
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
+    .presentation {
+        flex-direction: column; /* Empilhar imagem e texto */
+        align-items: center; /* Centralizar os itens */
+        margin-right: 5vw; /* Usar vw para margens responsivas */
+        margin-left: 5vw;
+        margin-top: 5vh; /* Reduzir margens verticais */
+        margin-bottom: 5vh;
+        text-align: center; /* Centralizar o texto na apresentação */
+    }
 
-.presentation img {
-    display: flex;
-    width: 150px;
-    align-items: center;
-    border-radius: 100px;
-    margin-bottom: 3.5vh;
-    text-align: justify;
-}
+    .presentation img {
+        width: 80%; /* Tornar a imagem responsiva */
+        max-width: 300px; /* Limitar a largura máxima */
+        margin-left: 0; /* Remover margem esquerda */
+        margin-right: 0; /* Remover margem direita */
+        margin-bottom: 20px; /* Adicionar espaço abaixo da imagem */
+    }
 
-.titles {
-    text-align: center;
-    font-size: 40px;
-    color: white;
-    font-weight: bold;
-    bottom: 40vh;
-    margin-top: 1.5rem;
-}
+    .text-about {
+        font-size: 1rem; /* Reduzir o tamanho da fonte do texto */
+        margin-right: 0; /* Remover margem direita */
+    }
 
-.icons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    grid-template-rows: repeat(2, auto);  /* 2 linhas */
-    gap: 15px; /* Espaço entre os itens */
-    width: fit-content; /* Ajusta ao tamanho dos itens */
-    margin: 20px auto 45px; /* Centraliza horizontalmente */
-}
+    .titles {
+        font-size: 28px; /* Reduzir o tamanho da fonte dos títulos */
+        margin-top: 1rem; /* Ajustar margem superior */
+        bottom: auto; /* Remover posicionamento 'bottom' */
+    }
 
-.icons img, .icons svg {
-    width: 80px;  /* Ajuste conforme necessário */
-    height: 80px;
-}
+    .card-container {
+        padding: 0 10px; /* Adicionar padding lateral ao container dos cards */
+    }
 
-.card-container {
-    display: flex;
-    justify-content: center;
-}
+    .card {
+        width: 100% !important; /* Tornar os cards responsivos */
+        height: auto !important;
+        margin-left: 0; /* Remover margens laterais */
+        margin-right: 0;
+        margin-top: 1rem; /* Reduzir margens verticais */
+        margin-bottom: 1rem;
+        flex-direction: column; /* Empilhar conteúdo do card */
+        align-items: flex-start; /* Alinhar conteúdo à esquerda */
+    }
 
-.card img {
-    align-items: center;
-    align-self: center;
-    border-radius: 18px;
-}
+    .card img {
+        position: static; /* Remover posicionamento absoluto */
+        width: 100%; /* Tornar a imagem responsiva */
+        max-height: none; /* Remover altura máxima */
+        height: auto;
+        margin-left: 0; /* Remover margem esquerda */
+        margin-top: 0; /* Remover margem superior */
+        margin-bottom: 10px; /* Adicionar espaço abaixo da imagem */
+        border-radius: 18px 18px 0 0; /* Arredondar apenas as bordas superiores */
+    }
 
-.card {
-    color: white;
-    background-color: #4F525C;
-    border-radius: 18px;
-    border-color: rgb(73, 73, 73);
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
+    .card-body {
+        margin-left: 0; /* Remover margem esquerda */
+        padding: 15px; /* Adicionar padding ao corpo do card */
+    }
 
-.footer {
-    margin-left: 13vw !important;
-    margin-right: 13vw !important;
-}
+    .custom-card {
+        height: auto !important; /* Remover altura fixa */
+        width: 100% !important; /* Tornar responsivo */
+    }
 
-.footer-content {
-    color: white;
-}
+    .footer {
+        margin-left: 5% !important; /* Reduzir margens laterais */
+        margin-right: 5% !important;
+    }
 
-.footer-bottom {
-    color: white;
-    text-align: center;
-    margin-top: 5vh;
-}
+    .footer-bottom {
+        margin-top: 3vh; /* Reduzir margem superior */
+    }
 
-.footer-section {
-    text-align: center;
-    margin-bottom: 2vh;
-}
+    .footer-section {
+        margin-bottom: 1.5vh; /* Reduzir margem inferior */
+    }
 
-#btn-social {
-    padding: 10px 16px;
-    font-size: 1.5rem;
-    border-radius: 50px;
-    margin-right: 10px;
-    margin-left: 10px;
+    .custom-line {
+        margin-left: 10%; /* Reduzir margens laterais */
+        margin-right: 10%;
+    }
+
+    #back-to-top {
+        margin-top: 85vh; /* Ajustar a posição vertical */
+        margin-left: 85vw; /* Ajustar a posição horizontal */
+        font-size: 16px; /* Reduzir o tamanho do ícone */
+        height: 30px; /* Reduzir a altura do botão */
+        width: 30px; /* Reduzir a largura do botão */
+    }
 }
