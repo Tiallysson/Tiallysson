@@ -33,21 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
             behavior: "smooth"
         });
     });
-});
-
-const light = document.querySelector('.light');
-
-document.addEventListener('mousemove', (e) => {
-    light.style.left = `${e.pageX}px`;
-    light.style.top = `${e.pageY}px`;
-});
-
-function carregarVersao() {
-    if (window.innerWidth <= 768) {
-        window.location.href = "mobile.html"; // Redireciona para a versão mobile
-    }
-}
-window.onload = carregarVersao;
+})
 
 // Configuração da data de início do contrato (ano, mês-1, dia)
 const startDate = new Date(2024, 10, 6);
